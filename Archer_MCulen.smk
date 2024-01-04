@@ -19,7 +19,7 @@ AWS_KEY=""
 S3_BUCKET =""
 
 # conect to remote S3
-S3 = S3RemoteProvider(host="https://storage-elixir1.cerit-sc.cz", access_key_id=AWS_ID, secret_access_key=AWS_KEY)
+S3 = S3RemoteProvider(host="", access_key_id=AWS_ID, secret_access_key=AWS_KEY)
 
 TARGET_BED = S3.remote(S3_BUCKET + "/src/myelo_proliferation/archer/beds/jana_archer_unique_plus2nt.bed")
 TARGET_INTERVALS = TARGET_INTERVALS = S3.remote(S3_BUCKET + "/src/myelo_proliferation/archer/beds/jana_archer_unique_plus2nt.intervals")
